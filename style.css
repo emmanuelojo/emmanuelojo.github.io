@@ -463,7 +463,8 @@ h3{
     margin: 20px auto;
 }
 .pic img{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 .pic p{
     visibility: hidden;
@@ -509,6 +510,7 @@ h3{
     cursor: pointer;
     background: #fff;
     color: red; 
+    font-weight: bold;
 }
 .pic:hover img{
     opacity: .2;
@@ -1143,8 +1145,8 @@ footer p{
         margin: auto;
     }
     .pcont img{
-        width: 400px;
-        height: 450px;
+        max-width: 100%;
+        height: 100%;
         border-radius: 10px;
         padding: 10px;
     }
