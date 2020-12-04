@@ -446,7 +446,7 @@ h3{
     place-content: center;
 }
 .pcont img{
-    max-width: 100%;
+    width: 100%;
     min-width: 400px;
     height: 500px;
     border-radius: 10px;
@@ -818,7 +818,7 @@ footer p{
         text-align: center;
         transition: 0.7s;
     }
-    .nav ul li{
+    nav ul li{
         display: inline;
         padding: 10px 0;
     }
@@ -859,7 +859,7 @@ footer p{
 		z-index: 2;
 		transition: 0.4s;
 	}
-	.nav-links ul{
+    .nav-links ul{
         display: block;
         text-align: center;
     }
