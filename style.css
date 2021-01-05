@@ -469,7 +469,7 @@ h3{
 }
 .pic p{
     visibility: hidden;
-    margin-top: -50%;
+    margin-top: -60%;
     text-align: center;
     overflow: hidden;
     text-decoration: none;
@@ -910,19 +910,35 @@ footer p{
     #services h3{
         margin-top: 30px;
     }
-    .pcont img{
-	width: 100%;
-        min-width: 340px;
+    #all .pcont img, #p-art .pcont img{
+        width: 330px;
         height: 400px;
         border-radius: 20px;
         padding: 10px;
+    }
+    .pic{
+        width: 330px;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+         place-content: center;
+         margin: 20px auto;
     }
     .pic:hover p{
         visibility: visible;
         max-width: 80%;
         transition: .5s ease;
     }
-  
+    .pic img{
+        width: 100%;
+        height: 100%;
+    }
+    .pic p{
+        margin-top: -65%;
+    }
+
+
     .blogs{
         margin-top: 20%;
     }
