@@ -1,512 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel's Portfolio</title>
+    <title> Emmanuel Ojo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">Emmanuel Ojo</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="#">
+          <i class="fa fa-home"></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="#about">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">About</span>
+       </a>
+       <span class="tooltip">About</span>
+     </li>
+     <li>
+       <a href="#services">
+         <i class="fa fa-briefcase"></i>
+         <span class="links_name">Services</span>
+       </a>
+       <span class="tooltip">Services</span>
+     </li>
+     <li>
+       <a href="#projects">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Projects</span>
+       </a>
+       <span class="tooltip">Projects</span>
+     </li>
+     <li>
+       <a href="#contact">
+         <i class='bx bx-phone' ></i>
+         <span class="links_name">Contact</span>
+       </a>
+       <span class="tooltip">Contact</span>
+     </li>
     
-    
-    <div class="navbar">
-        
-        <header>
-            <div class="brand-name">
-            <h1>Emmanuel </h1>
-                
+     <li class="profile">
+         <div class="profile-details">
+           <img src="./images/profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">E. Ojo</div>
+             <div class="job">Data Analyst + Web Dev</div>
+           </div>
+         </div>
+         <!-- <i class='bx bx-user' id="log_out" ></i> -->
+         <p id="log_out" > EO</p>
+     </li>
+    </ul>
+  </div>
+  <div class="circle"></div>
+  <section class="home-section">
+    <!-- <div class="text"> Welcome </div> -->
+    <!-- <div class="circle"></div>
+    <div class="circle2"></div> -->
+    <div class="name">
+      <h5>Hi, I'm Emmanuel Ojo</h5>
+      <br>
+      <h1><span></span></h1>
+      <br>
+      <div class="home-btn">
+        <a class="hire" href="#contact"> Hire Me</a>
+        <a class="view-projects" href="#projects">View Projects</a>
+      </div>
+    </div>
+    <div class="profile-img">
+      <img src="images/profile4.jpg" alt="" srcset="">
+    </div>
+  </section>
+  <div class="circle2"></div>
+  <!-- <section class="about-section" id="about">
+    <div class="about-holder">
+      <div class="text"> About Me</div>
+      <div class="about-text">
+        <p>I am a data analyst and software developer proficient in <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>SQL</b>, <b>Python</b> and its libraries. <br> 
+          I design and build web applications to solve immenent challenges.  <br>
+          I also turn <b>Machine Learning</b> algorithms into software and business analytics to improve efficiency and provide meaningful insights.
+          <br>
+          I also have experience in <b>Microsoft Power BI</b> and <b>Tableau</b> for data visualization.
+          </p>
+          <p>I love to partake in sporting activities such as football, basketball, table tennis and chess during my free time. </p>
+      </div>
+    </div>
+  </section> -->
+  <section class="about-section" id="about">
+    <div class="about-holder">
+      <div class="about-img">
+        <img src="./images/profile.jpg" alt="" srcset="">
+      </div>
+      <div class="about-text">
+        <div class="text"> About Me</div>
+        <p>I am a data analyst and software developer proficient in HTML, CSS, JavaScript, SQL, Python and its libraries. <br> 
+          I design and build web applications to solve immenent challenges.  <br>
+          I also turn Machine Learning algorithms into software and business analytics to improve efficiency and provide meaningful insights.
+          <br>
+          I also have experience in Microsoft Power BI and Tableau for data visualization.
+          </p>
+          <p>I love to partake in sporting activities such as football, basketball, table tennis and chess during my free time. </p>
+      </div>
+    </div>
+  </section>
+  <div class="circle3"></div>
+  <section class="services-section" id="services">
+    <div class="text"> Services</div>
+    <div class="services-holder">
+      <div class="card">
+        <!-- <div class="card-img">
+          <img src="images/bi10.PNG" alt="" srcset="">
+        </div> -->
+        <i class="fa fa-laptop"></i>
+        <h3>DATA ANALYSIS</h3>
+        <p>I evaluate data using analytical and statistical tools to organize, interpret, structure and visualize data
+          as useful information.  
+        </p>
+      </div>
+      <div class="card">
+        <!-- <div class="card-img">
+          <img src="images/web dev.jpg" alt="" srcset="">
+        </div> -->
+        <i class="fa fa-desktop"></i>
+        <h3>WEB DEVELOPMENT </h3>
+        <p>I work on the front end of applications giving it the client-oriented look
+          and making it interactive.
+        </p>
+      </div>
+      <div class="card">
+        <!-- <div class="card-img">
+          <img src="images/photography.jpg" alt="" srcset="">
+        </div>   -->
+        <i class="fa fa-camera"></i>
+        <h3>PHOTOGRAPHY</h3>
+        <p>I take pictures to create memories, make special momemts unforgettable and explore different ways
+          of documenting stories. 
+        </p>
+      </div>
+    </div>
+    <div class="tools">
+      <!-- <h3 class="text">My Tools</h3> -->
+      <div class="tools-holder">
+
+      </div>
+    </div>
+  </section>
+  <div class="circle4"></div>
+  <section class="projects-section" id="projects">
+    <div class="text"> Projects </div>
+    <div class="projects-holder">
+
+    </div>
+ 
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item  mr-3">
+        <a class="nav-link active" id="pills-analysis-tab" data-toggle="pill" href="#pills-analysis" role="tab" aria-controls="pills-analysis" aria-selected="true"> Data Analysis </a>
+      </li>
+      <li class="nav-item  mr-3">
+        <a class="nav-link" id="pills-designs-tab" data-toggle="pill" href="#pills-designs" role="tab" aria-controls="pills-designs" aria-selected="false">Web Designs</a>
+      </li>
+      <li class="nav-item  mr-3">
+        <a class="nav-link" id="pills-photo-tab" data-toggle="pill" href="#pills-photo" role="tab" aria-controls="pills-photo" aria-selected="false">Photography</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-analysis" role="tabpanel" aria-labelledby="pills-analysis-tab"> 
+        <div class="project-holder">
+          <div class="project">
+            <div class="project-img">
+              <img src="images/heart.jpg"alt="" srcset="">
             </div>
-            <input type="checkbox" id="chk">
-                <label for="chk" id="show-btn">
-                    <i class="fa fa-ellipsis-h"></i>
-                </label>
-           
-            <div class="nav-links" id="nav-links">
-                <nav>
-                    <ul>
-                        <li class="active"><a href="#home" >Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        
-                    </ul>
-                    <label for="chk" id="hide-btn">
-                        <i class="fa fa-times"></i>
-                    </label>
-                </nav>
-                
+            <div class="project-details">
+              <h4>Heart </h4>
+              <h5>Focus: Data Science</h5>
+              <p>An analysis to determine and predict likelihood of a person's heart's condition.</p>
+              <div class="project-link">
+                <a  href="https://github.com/emmanuelojo/Heart-dataset"><i class="fa fa-github"></i> SOURCE CODE </a>
+                <a href="https://github.com/emmanuelojo/Heart-dataset"><i class="fa fa-globe"></i> VISIT SITE </a>
+              </div>
+              <div class="project-tools">
+                <p>Python</p>
+                <p>Logistic Regression</p>
+                <p>Decision Tree</p>
+                <p>K-Neighbors</p>
+              </div>
             </div>
-            
-        </header>
-        
-        <div class="main-info" id="home">
-            <div class="name">
-                <h5>Hello, My Name is</h5>
-                <h1>Emmanuel Ojo</h1>
-                <br>
-                <h3><span></span></h3>
-                <br>
-                <div class="cv-btn">
-                    <a href="https://documentcloud.adobe.com/link/track?uri=urn:acid:scds:US:e9498be7-a10f-4831-bde6-412b47c5021a">Download CV </a>
-                </div>
+          </div>
+          <div class="project">
+            <div class="project-img">
+              <img src="images/banking.png"alt="" srcset="">
             </div>
+            <div class="project-details">
+              <h4>Bank Transactions </h4>
+              <h5>Focus: Data Analytics</h5>
+              <p>An analysis to determine the most used transaction channel, most patronized bank <br> and most active age-group.</p>
+              <div class="project-link">
+                <a  href="https://github.com/emmanuelojo/LinkedIn_bank_transactions"><i class="fa fa-github"></i> SOURCE CODE </a>
+                <a href="https://github.com/emmanuelojo/LinkedIn_bank_transactions"><i class="fa fa-globe"></i> VISIT SITE </a>
+              </div>
+              <div class="project-tools">
+                <p>Python</p>
+                <p>Charts</p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img">
+              <img src="images/house.JPG"alt="" srcset="">
+            </div>
+            <div class="project-details">
+              <h4>Prediction of houses</h4>
+              <h5>Focus: Data Science(ML Prediction)</h5>
+              <p>Predicting the prices of houses using Machine Learning algorithms and a Flask server.</p>
+              <div class="project-link">
+                <a href="https://github.com/emmanuelojo/Flask-Home-Prices-Prediction"><i class="fa fa-github"></i> SOURCE CODE </a>
+                <a href="https://github.com/emmanuelojo/Flask-Home-Prices-Prediction"><i class="fa fa-globe"></i> VISIT SITE </a>
+              </div>
+              <div class="project-tools">
+                <p>Python</p>
+                <p>Machine Learning</p>
+                <p>Linear Regression</p>
+                <p>Flask</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="tab-pane fade" id="pills-designs" role="tabpanel" aria-labelledby="pills-designs-tab">
+        <div class="project-holder">
+          <div class="project">
+            <div class="project-img2">
+              <img src="images/food.PNG" alt="" srcset="">
+            </div>
+            <div class="project-details">
+              <h4> Food Site </h4>
+              <h5>Focus: Frontend(Vuex)</h5>
+              <p>An online food store using vue <br> state management.</p>
+              <div class="project-link">
+                <a  href="https://github.com/emmanuelojo/Food_Store"><i class="fa fa-github"></i> SOURCE CODE </a>
+                <a href="https://vuex-food-store.netlify.app"><i class="fa fa-globe"></i> VISIT SITE </a>
+              </div>
+              <div class="project-tools">
+                <p>Bootstrap</p>
+                <p>Vue</p>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img2">
+              <img src="images/store.PNG"alt="" srcset="">
+            </div>
+            <div class="project-details">
+              <h4> An online shopping store </h4>
+              <h5>Focus: Frontend</h5>
+              <p>An online mall.</p>
+              <div class="project-link">
+                <a  href="https://github.com/emmanuelojo/e-shop"><i class="fa fa-github"></i> SOURCE CODE </a>
+                <a href="https://github.com/emmanuelojo/e-shop"><i class="fa fa-globe"></i> VISIT SITE </a>
+              </div>
+              <div class="project-tools">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="images-holder">
+          <img src="images/waffles.JPG" alt="" srcset="">
+        </div> -->
+      </div>
+      <div class="tab-pane fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab">
+        <!-- <div class="images-holder">
+          <img src="images/waffles.JPG" alt="" srcset="">
+        </div> -->
+        <div class="project-holder">
+          <div class="project">
+            <div class="project-img2">
+              <img src="images/sandwich.JPG"alt="" srcset="">
+            </div>
+            <div class="project-details3">
+              <h4> Sandwich </h4>
+              <h5>Focus: Food Photography </h5>
+              <p> From chef summers kitchen</p>              
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img2">
+              <img src="images/chocolate pancake.jpeg"alt="" srcset="">
+            </div>
+            <div class="project-details3">
+              <h4>Chocolate-flavoured <br> Pancake</h4>
+              <h5>Focus: Food Photography </h5>
+              <p> From chef summers kitchen</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img2">
+              <img src="images/toast.JPG"alt="" srcset="">
+            </div>
+            <div class="project-details3">
+              <h4>French Toast</h4>
+              <h5>Focus: Food Photography </h5>
+              <p> From chef summers kitchen</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img2">
+              <img src="images/vanilla waffles.JPG"alt="" srcset="">
+            </div>
+            <div class="project-details3">
+              <h4>Vanilla waffles</h4>
+              <h5>Focus: Food Photography </h5>
+              <p> From chef summers kitchen</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img2">
+              <img src="images/velvet waffles.JPG"alt="" srcset="">
+            </div>
+            <div class="project-details3">
+              <h4>Velvet waffles</h4>
+              <h5>Focus: Food Photography </h5>
+              <p> From chef summers kitchen</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="content2">
-            <div id="about1"></div>
-            <br>
-            <br>
-            <br>
-            <div id="about">
-                <h3 class="und" id="gy"  data-aos="fade-right"  data-aos-duration="1000" data-aos-once="false">About Me</h3>
-                <div class="wrapper" data-aos="fade-left">
-                    <div class="card front-face">
-                        <img src="jekon1.jpeg">
-                    </div>
-                    <div class="card back-face">
-                        <img src="jekon1.jpeg">
-                        <div class="info">
-                            <div class="title">Emmanuel Ojo</div>
-                            <h4><b>Emmanuel Ojo</b></h4>
-                            <br>
-                            <p>I am a data analyst and software developer proficient in <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>SQL</b>, <b>Python</b> and its libraries. <br> <br>
-                            I turn <b>Machine Learning</b> algorithms into software and business analytics to improve efficiency and provide meaningful insights.
-                            <br>
-                            I also have experience in <b>Microsoft Power BI</b> and <b>Tableau</b> for data visualization.
-                            </p>
-                            <br>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-    
-            <div id="services">
-                <h3 data-aos="flip-up" class="und" id="gy">What I Do</h3>
-                <div class="serv-content">
-                    <div class="sub-serv">
-                        <div class="serv-head"> 
-                            <i class="fa fa-laptop"></i>
-                            <h3>Data Analysis</h3>
-                        </div>
-                        <div class="sub-cont">
-                            <p>I evaluate data using analytical and statistical tools to organize, interpret, structure and visualize data
-                                as useful information.  
-                            </p>
-                        </div>
-                    </div>
-                    <div class="sub-serv">
-                        <div class="serv-head"> 
-                            <i class="fa fa-desktop"></i>
-                            <h3>Web Development</h3>
-                        </div>
-                        <div class="sub-cont">
-                            <p>I work on the front end of applications giving it the client-oriented look
-                                and making it interactive.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="sub-serv">
-                        <div class="serv-head"> 
-                            <i class="fa fa-camera"></i>
-                            <h3>Photography</h3>
-                        </div>
-                        <div class="sub-cont">
-                            <p>I take pictures to create memories, make special momemts unforgettable and explore different ways
-                                of documenting stories. 
-                            </p>
-                        </div>
-                    </div>       
-            </div>
-            
-             <div class="skills" id="skills">
-                <div class="skills-head">
-                    <h3>MY SKILLS</h3>
-                </div>
-                <div class="skills-container">
-                    <div class="skills-content">
-                        <img src="py2.JPG">
-                        <br>
-                        <p>Python</p>
-                    </div>
-                    <div class="skills-content">
-                        <img src="db.JPG">
-                        <br>
-                        <p>Backend Database
-                            <br>
-                        MySQL
-                        </p>
-                    </div>
-                    <div class="skills-content">
-                        <img src="html.PNG">
-                        <br>
-                        <p>Front-End</p>
-                    </div>
-                    <div class="skills-content">
-                        <img src="css.PNG">
-                        <br>
-                        <p>CSS</p>
-                    </div>
-                    <div class="skills-content">
-                        <img src="js.PNG">
-                        <br>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="skills-icons">
-                    <img src="html.PNG">
-                    <img src="css.PNG">
-                    <img src="js.PNG">
-                    <img src="py2.JPG">
-                    <img src="sql.JPG">
-                    <img src="tableau.PNG">
-                    <img src="powerbi.PNG">
-                    <img src="git.PNG">
-                </div>      
-             
-            </div>
-    
-            
-            <div id="portfolio">
-                    <h3 data-aos="flip-up"  class="und" id="gy">My Portfolio</h3>
-    
-                    <div class="btns" id="gy">
-                        <h4 onclick="alls()" data-aos="fade-right" class="b1" id="allz">All</h4>
-                        <span class="line"></span>
-                        <h4 onclick="graph()" data-aos="fade-right" class="b2" id="graphz"> Data Analysis</h4>
-                        <span class="line"></span>
-                        <h4 onclick="pht()" data-aos="fade-left" class="t-btn"  id="photoz">Web Designs</h4>
-                        <span class="line"></span>
-                        <h4 onclick="pencil()" data-aos="fade-left" class="t-btn" id="pencilz">Photography</h4>
-                        <span class="line"></span>
-                        
-                    </div>
-                    
-                <div class="sub-port" id="port">
-                    <div class="sub-port2" id="all">
-                        
-                        <div class="pcont">
-                            <img src="bi13.JPG" data-aos="fade-left">
-                            <img src="waffles.JPG" data-aos="fade-right" >
-                            <img src="store3.PNG" data-aos="flip-up" >
-                            <img src="bi10.PNG" data-aos="fade-left" >
-                            <img src="jcal.PNG" data-aos="flip-up" >
-                            <img src="toast.JPG" data-aos="fade-down" >
-                        </div>  
-                    </div>
-                    <div class="sub-port3" id="graphics">
-                        <div class="pcont">
-
-                            <div class="pic" data-aos="fade-left">
-                                <img src="house.JPG">
-                                <p>Predicting the prices of houses using Machine Learning algorithms and a Flask server.</p>
-                                <a href="https://github.com/emmanuelojo/Flask-Home-Prices-Prediction">Read More</a>
-                            </div>
-                            <div class="pic" data-aos="fade-right">
-                                <img src="car.JPG">
-                                <p>A Machine Learning model that predicts the amount that a car would be sold for based on its mileage and age.</p>
-                                <a href="https://github.com/emmanuelojo/Cars-Train-Test-Split">Read More</a>
-                            </div>
-                            <div class="pic" data-aos="fade-down">
-                                <img src="exam.JPG">
-                                <p>Using lines of Python to create an online test system that grades students immediately after the test is completed.</p>
-                                <a href="https://github.com/emmanuelojo/CBT">Read More</a>
-                            </div>
-                            <div class="pic" data-aos="flip-up">
-                                <img src="guess.jpg">
-                                <p>A Python guessing game</p>
-                                <a href="https://github.com/emmanuelojo/MRN-Game">Read More</a>
-                            </div>
-                        </div>  
-                    </div> 
-                    <div class="sub-port4" id="photo">
-                        <div class="pcont">
-                           <div class="pic" data-aos="flip-up">
-                                <img src="kvng2.PNG">
-                                <a href="https://kvngart.github.io">Read More</a>
-                            </div>
-                            <div class="pic" data-aos="flip-up">
-                                <img src="jahdai.PNG">
-                                <a href="https://jahdaiglobal.com">Read More</a>
-                            </div>
-                            <div class="pic" data-aos="flip-up">
-                                <img src="food2.PNG">
-                            </div>
-                            <div class="pic" data-aos="flip-up">
-                                <img src="jcal.PNG">
-                            </div>
-                            <div class="pic" data-aos="flip-up">
-                                <img src="store3.PNG">
-                            </div>
-
-                        </div>  
-                    </div> 
-                    <div class="sub-port5" id="p-art">
-                        <div class="pcont">
-                            <img src="sandwich2.JPG" data-aos="zoom" >
-                            <img src="pcakes.jpeg" data-aos="fade-down" >
-                            <img src="waffles2.JPG" data-aos="fade-right" >
-                            <img src="yam.jpeg" data-aos="flip-up" >
-                            <img src="waffles3.JPG" data-aos="fade-left" >
-                            <img src="pcakes3.jpeg" data-aos="zoom" >
-                            <img src="waffles4.JPG" data-aos="fade-down" >
-                            <img src="pcakes2.jpeg" data-aos="fade-right" >
-                        </div>  
-                    </div>  
-                </div>        
-            </div>
-            
-        </div>
-        
-        <div class="blogs" id="blog">
-            <div class="blog-head">
-                <h1>Latest blogs</h1>
-            </div>
-            <div class="blogs-owl-carousel">
-                <div class="blog">
-                    <img src="lapee3.jpg" alt="">
-                    <div class="blog-description">
-                        <div class="category">Coding</div>
-                        <h2 class="title"> Choosing A Programming Language</h2>
-                        <div class="date"> April 15, 2020</div>
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="blog.PNG" alt="">
-                    <div class="blog-description">
-                        <div class="category"> Web Development</div>
-                        <h2 class="title"> How To Build A Website</h2>
-                        <div class="date"> April 15, 2020</div>
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="sunset.jpg" alt="">
-                    <div class="blog-description">
-                        <div class="category">Photography</div>
-                        <h2 class="title"> Nature Photography</h2>
-                        <div class="date"> April 15, 2020</div>
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="food.jpg" alt="">
-                    <div class="blog-description">
-                        <div class="category">Food</div>
-                        <h2 class="title"> What To Eat During This Lockdown</h2>
-                        <div class="date"> April 15, 2020</div>
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="gym2.jpg" alt="">
-                    <div class="blog-description">
-                        <div class="category">Gym</div>
-                        <h2 class="title"> Staying Fit</h2>
-                        <div class="date"> April 15, 2020</div>
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="contact" data-aos="zoom" >
-            <h4 class="und" id="gy">Contact Me</h4>
-            <div class="sub-contact">
-                <div class="c-banner" data-aos="fade-left" >
-                    <img src="bi12.JPG">
-                </div>
-
-                
-                <div class="icons1">
-                    <span><i class="fa fa-phone"></i> <a href="tel:+2347089327940"> +234 708 9327 940 </a></span>
-                    <span><i class="fa fa-envelope"></i> <a href="mailto:emmanuelojo1234@gmail.com"> emmanuelojo1234@gmail.com </a></span>
-                </div>
-                <br>
-                <br>
-                <h5>Connect Via Social Media </h5>
-                <div class="icons2">
-                    <ul>
-                        <a href="http://instagram.com/jekon_007"><i class="fa fa-instagram"></i></a>
-                        <a href="https://twitter.com/jekon_007"><i class="fa fa-twitter"></i></a>
-                        <a href="tel:+2347089327940"><i class="fa fa-whatsapp"></i></a> 
-                        <a href="https://www.linkedin.com/in/emmanuel-ojo-a16b95144"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://github.com/emmanuelojo"><i class="fa fa-github"></i></a> 
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    
-        <br>
-        <br>
-        <br>
-        
-
-    
-    
-    <div class="end-box"> 
-        <div class="end">
-            <h1>EMMANUEL</h1>
-        </div>
-        <footer>
-            <p>Copyright <i class="fa fa-copyright"></i> 2020 | Emmanuel Ojo | All Rights Reserved.</p>
-        </footer>
+  </section>
+  <div class="circle5"></div>
+  <section class="contact-section" id="contact">
+    <div class="social-media">
+      <!-- <h4> Engage Me </h4> -->
+      <h4>Contact Me</h4>
+      <div class="mobile">
+        <a href="tel:+2347089327940"><i class="fa fa-phone"></i> +234 708 9327 940 </a></span>
+        <a href="mailto:emmanuelojo1234@gmail.com"><i class="fa fa-envelope"></i> emmanuelojo1234@gmail.com </a>
+      </div>
+      <!-- <h5>Connect Via Social Media</h5> -->
+      <div class="social-icons">
+        <ul>
+          <a href="http://instagram.com/jekon_007"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/jekon_007"><i class="fa fa-twitter"></i></a>
+          <a href="https://wa.me/+2347089327940"><i class="fa fa-whatsapp"></i></a> 
+          <a href="https://www.linkedin.com/in/emmanuel-ojo-a16b95144"><i class="fa fa-linkedin"></i></a>           
+          <a href="https://github.com/emmanuelojo"><i class="fa fa-github"></i></a> 
+        </ul>
+      </div>
     </div>
+  </section>
+  <section>
+    <footer>
+      <div class="footer-details">
+        <i class="fa fa-copyright"></i> 
+        <p>| Emmanuel Ojo | 2020 </p>
+      </div>
+    </footer>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
 
-    
-
-
-
-
-
-
-
-
-    <script>
-        var al = document.getElementById("all");
-        var gr = document.getElementById("graphics");
-        var ph = document.getElementById("photo");
-        var pa = document.getElementById("p-art");
-        var alz = document.getElementById("allz");
-        var grz = document.getElementById("graphz");
-        var phz = document.getElementById("photoz");
-        var paz = document.getElementById("pencilz");  
-
-        function alls(){
-            al.style.transform = "translateX(0px)";
-            al.style.display = "block";
-            alz.style.color = "#e77f67";
-            alz.style.backgroundColor = "transparent";
-            gr.style.transform = "translateX(300px)";
-            gr.style.display = "none";
-            grz.style.color = "#000";
-            grz.style.backgroundColor = "transparent";
-            ph.style.transform = "translateX(300px)";
-            ph.style.display = "none";
-            phz.style.color = "#000";
-            phz.style.backgroundColor = "transparent";
-            pa.style.transform = "translateX(300px)";
-            pa.style.display = "none";
-            paz.style.color = "#000";
-            paz.style.backgroundColor = "transparent";
-        }
-        function graph(){
-            al.style.transform = "translateX(0px)";
-            al.style.display = "none";
-            alz.style.color = "#000";
-            alz.style.backgroundColor = "transparent";
-            gr.style.transform = "translateX(0px)";
-            gr.style.display = "block";
-            grz.style.color = "#e77f67";
-            grz.style.backgroundColor = "transparent";
-            ph.style.transform = "translateX(0px)";
-            ph.style.display = "none";
-            phz.style.color = "#000";
-            phz.style.backgroundColor = "transparent";
-            pa.style.transform = "translateX(0px)";
-            pa.style.display = "none";
-            paz.style.color = "#000";
-            z.style.left = "50px";
-            paz.style.backgroundColor = "transparent";
-        }
-        function pht(){
-            al.style.transform = "translateX(0px)";
-            al.style.display = "none";
-            alz.style.color = "#000";
-            alz.style.backgroundColor = "transparent";
-            gr.style.transform = "translateX(0px)";
-            gr.style.display = "none";
-            grz.style.color = "#000";
-            grz.style.backgroundColor = "transparent";
-            ph.style.transform = "translateX(-3px)";
-            ph.style.display = "block";
-            phz.style.color ="#e77f67";
-            phz.style.backgroundColor = "transparent";
-            pa.style.transform = "translateX(0px)";
-            pa.style.display = "none";
-            paz.style.color = "#000";
-            paz.style.backgroundColor = "transparent";
-            z.style.left = "140px";
-        }
-        function pencil(){
-            al.style.transform = "translateX(0px)";
-            al.style.display = "none";
-            alz.style.color = "#000";
-            alz.style.backgroundColor = "transparent";
-            gr.style.transform = "translateX(0px)";
-            gr.style.display = "none";
-            grz.style.color = "#000";
-            grz.style.backgroundColor = "transparent";
-            ph.style.transform = "translateX(0px)";
-            ph.style.display = "none";
-            phz.style.color ="#000";
-            phz.style.backgroundColor = "transparent";
-            pa.style.transform = "translateX(-5px)";
-            pa.style.display = "block";
-            paz.style.backgroundColor = "transparent";
-            paz.style.color = "#e77f67";
-            z.style.left = "250px";
-        }
-
-    </script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
 
 
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1500,
-            easing: "ease",
-            delay: 500,
-            once: true,
-        });
-    </script>
-
-
-   
-
-
-
-    <script>
-        var t = setInterval(move, 5000);
-        var pos = 0;
-        var box = document.getElementById("slidee");
-
-        function nove(){
-            if (pos >= 1600){
-                clearInterval(t);
-            }
-            else{
-                pos += 400;
-                box.style.left = pos+ "px";
-            }
-        }
-    </script>
-
-    <script>
-        let ul =  document.querySelector('ul');
-        let li = document.querySelectorAll('li');
-
-        li.forEach(el => {
-            el.addEventListener('click', function(){
-                ul.querySelector('.active').classList.remove('active');
-                el.classList.add('active');
-            });
-        });
-    </script>
-
-
-
+  <script src="script.js"></script>
+  <script src="firebase.js"></script>
 </body>
 </html>
