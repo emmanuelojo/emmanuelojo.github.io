@@ -371,6 +371,7 @@ section {
 .profile-img img{
   border-radius: 10px;
   object-fit: cover;
+  object-position: top;
 }
 .home-section .text
 /* .about-section .text,
@@ -489,9 +490,10 @@ section {
 }
 .about-section .about-img img{
   object-fit: cover;
+  object-position: top;
   width: 200px;
   height: 300px;
-
+  border-radius: 5px;
 }
 .about-text {
   display: grid;
