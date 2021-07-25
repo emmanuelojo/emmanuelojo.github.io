@@ -509,7 +509,9 @@ section {
   font-weight: 500;
   padding-bottom: 10px;
 }
-
+.about-section2{
+  display: none;
+}
 .services-section {
   padding: 20px;
 }
@@ -646,7 +648,7 @@ section {
   font-size: 20px;
 }
 .project-details3 h4{
-  padding-top: 100px;
+  padding-top: 70px;
   display: flex;
   justify-content: center;
   font-size: 20px;
@@ -807,17 +809,70 @@ footer{
   }
   .about-holder{
     display: none;
-    width: 250px;
+    /* width: 250px; */
     /* margin: auto; */
+    width: 250px;
+    margin: auto;
+    /* margin-left: 0;
+    margin-right: 0; */
+  }
+  .about-img{
+    width: 30px;
+    height: 30px;
+    padding-top: 20px;
+  }
+  .about-img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: contain ;
   }
   .about-text .text{
     display: flex;
+    justify-content: right;
     font-size: 20px
   }
   .about-text p{
     font-size: 14px;
     display: flex;
     justify-content: space-evenly;
+  }
+
+  .about-section2{
+    display: block;
+    background: #E4E9F7;
+  }
+  .about-holder2 {  
+    display: flex;
+    justify-content: center;  
+    margin: auto;
+    padding-top: 35px;
+  }
+  .about-text2{
+    width: 250px;
+    /* margin-left: 100px;
+    margin-right: 10px; */
+    /* margin-left: 120px ; */
+    /* margin-right: 150px auto; */
+    /* margin: auto; */
+    margin-left: 90px ;
+    /* margin-right: 150px; */
+    /* border: 2px solid red; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+  }
+
+  .text2{
+    padding-top: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text2 p {
+    padding: 0 10px;
   }
 
   /* .services-holder .card {
