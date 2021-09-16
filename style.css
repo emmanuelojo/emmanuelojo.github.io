@@ -676,7 +676,10 @@ section {
   justify-content: center;
   font-size: 14px;
 }
-
+.project-details p a{
+  margin-left: 5px;
+  margin-right: 3px;
+}
 .project-link {  
   display: flex;
   justify-content: center;
