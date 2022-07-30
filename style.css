@@ -793,6 +793,10 @@ footer{
   margin-left: 5px;
   margin-right: 5px;
 }
+.footer-details a{
+  text-decoration:none;
+  color: white;
+}
 
 @media screen and (max-width: 768px) {
   .home-section .name{
