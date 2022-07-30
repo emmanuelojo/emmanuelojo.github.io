@@ -782,6 +782,10 @@ footer{
   background-color: #11101D;
   color: #ffff;
 }
+footer a{
+  text-decoration:none;
+  color: white;
+}
 .footer-details {
   display: flex;
   justify-content: center;
